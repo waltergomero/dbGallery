@@ -7,5 +7,5 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-	SELECT * from Status;
+	SELECT StatusId, StatusName, StatusTypeId FROM Status;
 END

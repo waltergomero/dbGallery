@@ -120,7 +120,6 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
-    <Folder Include="Security\" />
     <Folder Include="dbo\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
@@ -160,10 +159,6 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="Security\prod_user.sql" />
-    <Build Include="Security\test_user.sql" />
-    <Build Include="Security\test_user_1.sql" />
-    <Build Include="Security\RoleMemberships.sql" />
     <Build Include="dbo\Stored Procedures\usp_StatusList.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
@@ -180,11 +175,15 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="Security\Permissions.sql" />
     <Build Include="dbo\Tables\Category.sql" />
     <Build Include="dbo\Stored Procedures\usp_CategoryAdd.sql" />
     <Build Include="dbo\Stored Procedures\usp_CategoryById.sql" />
     <Build Include="dbo\Stored Procedures\usp_CategoryList.sql" />
     <Build Include="dbo\Stored Procedures\usp_CategoryUpdate.sql" />
+    <Build Include="dbo\Tables\Images.sql" />
+    <Build Include="dbo\Stored Procedures\usp_ImageGetUserFoldername.sql" />
+    <Build Include="dbo\Stored Procedures\usp_ImageAdd.sql" />
+    <Build Include="dbo\Stored Procedures\usp_ImageUpdate.sql" />
+    <Build Include="dbo\Stored Procedures\usp_ImageDelete.sql" />
   </ItemGroup>
 </Project>
